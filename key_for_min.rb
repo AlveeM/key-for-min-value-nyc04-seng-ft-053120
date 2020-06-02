@@ -3,12 +3,11 @@
 
 def key_for_min_value(name_hash)
   return nil if name_hash.empty?
+  min_name = ""
+  min_val = Float::INFINITY
   
-  name_hash.reduce(-Float::INFINITY) do |min, (key, val)|
-    puts val
-    val < min ? min = val : min
-    min
-  end
+  name_hash.each do |key, val|
+    if val < 
 end
 
 ikea = {:chair => 25, :table => 85, :mattress => 450}
