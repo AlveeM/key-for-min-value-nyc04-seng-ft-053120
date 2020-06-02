@@ -6,5 +6,5 @@ def key_for_min_value(name_hash)
   name_hash.each do |key, val|
     return key if min_val == val
   end
-  return -1
+  return nil
 end
