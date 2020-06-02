@@ -7,4 +7,5 @@ def key_for_min_value(name_hash)
   name_hash.reduce do |min, cur|
     min = cur if cur < min
     min
+  end
 end
